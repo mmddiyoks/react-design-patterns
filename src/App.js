@@ -4,6 +4,7 @@ import ImplementModal from  "./components/modalPattern/implementModal"
 import ContainerComponent from "./components/ContainerComponent/ImContainerComponent";
 import ImplementForm from "./components/FormPattern/ImplementForm";
 import styled from "styled-components";
+import OnbordingFlow from "./components/OnbordingFlow/ImplemantOnboardingFlow";
 // import ImplementList from "./components/ListItemPattern/implementList";
 const PatternSection = styled.div`
     background-color: ${(props)=> props.color};
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
         <div>
-            screen splite  Pattern
+           <p> screen splite  Pattern </p>
             <ImplementSplite />
         </div>
         <PatternSection color="yellow">
@@ -24,23 +25,31 @@ function App() {
 
 
         <PatternSection color="red">
-             List and item Pattern
+             <p>
+                 List and item Pattern
+             </p>
 
             {/*<ImplementList />*/}
         </PatternSection>
 
         <PatternSection color="blue">
-            Modal Pattern :
+            <p>
+                Modal Pattern :
+            </p>
+
             <ImplementModal/>
         </PatternSection>
 
 
         <PatternSection color="pink">
-            ContainerComponent
+           <p> ContainerComponent</p>
             <ContainerComponent/>
         </PatternSection>
 
-
+        <PatternSection color="cyan">
+            <p>OnbordingFlow Pattern</p>
+            <OnbordingFlow/>
+        </PatternSection>
 
     </div>
   );
