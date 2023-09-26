@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
     npm install
     npm install -g json-server
-    npx json-server  --watch  ./src/db.json
+    npx json-server src/server/db.json --watch
     npm run start
 
 ## Available Scripts
